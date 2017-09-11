@@ -36,6 +36,14 @@ ModelImporter:
     7400002: Cubo|CuboAction
     7400004: Cubo.001|Cubo.001Action
     7400006: Cubo.001|CuboAction
+    7400008: Cubo.001|Cubo.001|Cubo.001|Cubo.001Action|Cubo.001|Cubo.001Action
+    7400010: Cubo.001|Cubo.001|Cubo.001|CuboAction|Cubo.001|CuboAction
+    7400012: Cubo.001|Cubo|Cubo|Cubo.001Action|Cubo|Cubo.001Action
+    7400014: Cubo.001|Cubo|Cubo|CuboAction|Cubo|CuboAction
+    7400016: Cubo|Cubo.001|Cubo.001|Cubo.001Action|Cubo.001|Cubo.001Action
+    7400018: Cubo|Cubo.001|Cubo.001|CuboAction|Cubo.001|CuboAction
+    7400020: Cubo|Cubo|Cubo|Cubo.001Action|Cubo|Cubo.001Action
+    7400022: Cubo|Cubo|Cubo|CuboAction|Cubo|CuboAction
     9500000: //RootNode
   materials:
     importMaterials: 1
