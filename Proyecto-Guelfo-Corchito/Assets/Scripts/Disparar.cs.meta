@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 81c4bed8499fa7544b3f8789277a4b77
+timeCreated: 1505458001
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Corcho: {fileID: 1811874804836448, guid: 862e57b9414b35e46bceaa43eb8ab192, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

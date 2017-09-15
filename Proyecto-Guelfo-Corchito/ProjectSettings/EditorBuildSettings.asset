@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Escenas/MenuPrototipo.unity
+    guid: 455630de17372e0498a42d79c388c5f6
+  - enabled: 1
+    path: Assets/Escenas/Memotest.unity
+    guid: 8b86f92755fd3994fbdbe2ad70623e35
+  - enabled: 1
+    path: Assets/Escenas/Corchito.unity
+    guid: 498b95be3b215064c813959143405ac1

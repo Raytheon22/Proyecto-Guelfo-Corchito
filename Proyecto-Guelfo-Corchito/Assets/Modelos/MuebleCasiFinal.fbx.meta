@@ -1,23 +1,43 @@
 fileFormatVersion: 2
-guid: 606c310b4e91a8a4683e493e59dd7c3c
-timeCreated: 1505169121
+guid: 36f985d571ee87b409bf0974acef3c1f
+timeCreated: 1505410600
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cubo.007
-    100002: //RootNode
-    400000: Cubo.007
-    400002: //RootNode
-    2300000: Cubo.007
-    2300002: //RootNode
-    3300000: Cubo.007
-    3300002: //RootNode
-    4300000: Cubo
-    4300002: Cubo.007
-    7400000: Cubo|Cubo.001Action
-    7400002: Cubo|CuboAction
-    7400004: Cubo|CuboAction.001
+    100000: Cubo.006
+    100002: Cubo.007
+    100004: //RootNode
+    100006: Puerta1
+    100008: Puerta2
+    400000: Cubo.006
+    400002: Cubo.007
+    400004: //RootNode
+    400006: Puerta1
+    400008: Puerta2
+    2300000: Cubo.006
+    2300002: Cubo.007
+    2300004: //RootNode
+    2300006: Puerta1
+    2300008: Puerta2
+    3300000: Cubo.006
+    3300002: Cubo.007
+    3300004: //RootNode
+    3300006: Puerta1
+    3300008: Puerta2
+    4300000: Mueble
+    4300002: Puerta2
+    4300004: Cubo.006
+    4300006: Puerta1
+    4300008: Cubo.007
+    7400000: Puerta2|Cubo.001Action
+    7400002: Puerta2|CuboAction
+    7400004: Puerta2|Puerta1Action
+    7400006: Puerta2|Puerta2Action
+    7400008: Puerta1|Cubo.001Action
+    7400010: Puerta1|CuboAction
+    7400012: Puerta1|Puerta1Action
+    7400014: Puerta1|Puerta2Action
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -43,8 +63,8 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Cubo|CuboAction.001
-      takeName: Cubo|CuboAction.001
+      name: Puerta2|Puerta2Action
+      takeName: Puerta2|Puerta2Action
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -69,7 +89,51 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Cubo.007
+      - path: Puerta1
+        weight: 1
+      - path: Puerta1/Cubo.007
+        weight: 1
+      - path: Puerta2
+        weight: 1
+      - path: Puerta2/Cubo.006
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Puerta1|Puerta1Action
+      takeName: Puerta1|Puerta1Action
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Puerta1
+        weight: 1
+      - path: Puerta1/Cubo.007
+        weight: 1
+      - path: Puerta2
+        weight: 1
+      - path: Puerta2/Cubo.006
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}

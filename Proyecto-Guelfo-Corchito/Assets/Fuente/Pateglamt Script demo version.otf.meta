@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b41f0519a8fa89a489611993271aef43
+timeCreated: 1505456645
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pateglamt Script demo version
+  fontNames:
+  - Pateglamt Script demo version
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
