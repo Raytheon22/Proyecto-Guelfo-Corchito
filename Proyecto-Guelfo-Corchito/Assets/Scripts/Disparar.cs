@@ -21,7 +21,7 @@ public class Disparar : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.Space))
         {
-            Velocidad++;
+            Velocidad += 0.4f;
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && Cargado)
@@ -32,10 +32,8 @@ public class Disparar : MonoBehaviour {
             Rigidbody rig = proyectil.GetComponent<Rigidbody>();
             rig.velocity = transform.forward * Velocidad;
 			Cargado = false;
-			if (manager.GetComponent<LevelManagerCorchito>().turno == true) 
-			{
-				manager.GetComponent<LevelManagerCorchito>().turno = false;
-			}
+
+            LevelManagerCorchito.Instance.turno = !LevelManagerCorchito.Instance.turno;
 
         }
 
