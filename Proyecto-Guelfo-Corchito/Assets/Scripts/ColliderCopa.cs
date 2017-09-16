@@ -18,7 +18,6 @@ public class ColliderCopa : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		col = col;
 		Invoke ("rompercorcho", 3);
 		if (manager.GetComponent<LevelManagerCorchito> ().turno == false) 
 		{

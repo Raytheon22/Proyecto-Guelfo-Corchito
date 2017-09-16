@@ -11,6 +11,7 @@ public class MemotestManager : MonoBehaviour {
     public List<GameObject> BotellasAcertadas;
     public Animator anim1;
     public Animator anim2;
+    public Rotar vuelverot;
 	public float cronometro;
 
     void Awake() {
@@ -18,7 +19,6 @@ public class MemotestManager : MonoBehaviour {
         Instance = this;
         BotellasLista = new List<GameObject>(); //Lista de botellas levantadas
         BotellasAcertadas = new List<GameObject>();
-        
     }
 
     void Tiempo()
@@ -29,9 +29,8 @@ public class MemotestManager : MonoBehaviour {
     }
 
 	void nosoniguales()
-	{
-		
-		if (cronometro <= 0.0f) 
+	{		
+		if (cronometro <= -0.5f) 
 		{
 			anim1.SetBool("Rotar", false);
 			anim2.SetBool("Rotar", false);
@@ -66,7 +65,6 @@ public class MemotestManager : MonoBehaviour {
 			else 
 			{
 				nosoniguales ();
-
 			}
 				
 		}
