@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColliderCopa : MonoBehaviour {
 
 	public GameObject manager;
+	public Collider col;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +18,8 @@ public class ColliderCopa : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		Destroy (col.gameObject);
+		col = col;
+		Invoke ("rompercorcho", 3);
 		if (manager.GetComponent<LevelManagerCorchito> ().turno == false) 
 		{
 			manager.GetComponent<LevelManagerCorchito> ().puntaje1 = manager.GetComponent<LevelManagerCorchito> ().puntaje1 + 1;
@@ -26,5 +28,10 @@ public class ColliderCopa : MonoBehaviour {
 		{
 			manager.GetComponent<LevelManagerCorchito> ().puntaje2 = manager.GetComponent<LevelManagerCorchito> ().puntaje2 + 1;
 		}
+	}
+	void rompercorcho()
+	{
+		Destroy (col.gameObject);
+		col = null;
 	}
 }

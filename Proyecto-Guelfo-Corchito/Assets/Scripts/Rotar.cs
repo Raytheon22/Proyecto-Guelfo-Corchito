@@ -21,6 +21,7 @@ public class Rotar : MonoBehaviour
         }
         if (MemotestManager.Instance.BotellasLista.Count == 1 && MemotestManager.Instance.BotellasLista[0].name != gameObject.name) //Si hay una levantada, y es diferente a esta, agrega a esta tambien
         {
+			MemotestManager.Instance.cronometro = 1.5f;
             anim.SetBool("Rotar", true); //La rota
             MemotestManager.Instance.BotellasLista.Add(gameObject); //La añade a la lista de botellas levantadas
         }
