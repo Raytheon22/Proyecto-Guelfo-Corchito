@@ -5,32 +5,34 @@ using UnityEngine;
 public class ColliderCopa : MonoBehaviour {
 
 	public GameObject manager;
-	public Collider col;
-	// Use this for initialization
+    public float Cronometro;
+    bool Sumar = false;
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
-		
+		if (Cronometro > -0.5)
+        {
+            Cronometro -= Time.deltaTime;
+        }
 	}
+
 	void OnTriggerEnter(Collider col)
 	{
-		Invoke ("rompercorcho", 3);
-		if (manager.GetComponent<LevelManagerCorchito> ().turno == false) 
+        Cronometro = 2.0f;
+        Sumar = true;
+ 
+		if (!LevelManagerCorchito.Instance.turno && Sumar) 
 		{
-			manager.GetComponent<LevelManagerCorchito> ().puntaje1 = manager.GetComponent<LevelManagerCorchito> ().puntaje1 + 1;
+			LevelManagerCorchito.Instance.puntaje1 += 1;
+            Sumar = false;
 		}
-		if (manager.GetComponent<LevelManagerCorchito> ().turno == true) 
+		if (LevelManagerCorchito.Instance.turno && Sumar) 
 		{
-			manager.GetComponent<LevelManagerCorchito> ().puntaje2 = manager.GetComponent<LevelManagerCorchito> ().puntaje2 + 1;
-		}
-	}
-	void rompercorcho()
-	{
-		Destroy (col.gameObject);
-		col = null;
-	}
+            LevelManagerCorchito.Instance.puntaje2 += 1;
+            Sumar = false;
+        }
+    }
 }

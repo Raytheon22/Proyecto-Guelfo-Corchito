@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254dbe6dd92856d48b88fe55d049e9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotando: 1
   rotacion: {x: 0, y: 0, z: 0}
 --- !u!136 &136097862131063678
 CapsuleCollider:
