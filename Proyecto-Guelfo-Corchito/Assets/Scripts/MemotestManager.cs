@@ -13,6 +13,7 @@ public class MemotestManager : MonoBehaviour {
     public Animator anim2;
     public Rotar vuelverot;
 	public float cronometro;
+    public float cronometro2; //Para que no se puedan clickear botellas mientras esta el zoom
 
     void Awake() {
 
@@ -46,6 +47,11 @@ public class MemotestManager : MonoBehaviour {
 		{
 			cronometro -= Time.deltaTime;
 		}
+
+        if (cronometro2 > -0.5f)
+        {
+            cronometro2 -= Time.deltaTime;
+        }
 	
         if (BotellasLista.Count == 2) //Cuando estan 2 levantadas accede al codigo que tiene como propiedad un numero y a ese numero le da un valor
         {

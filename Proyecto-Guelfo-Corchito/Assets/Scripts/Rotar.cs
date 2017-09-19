@@ -20,8 +20,9 @@ public class Rotar : MonoBehaviour
 
     void OnMouseUp()
     {
-        if (MemotestManager.Instance.BotellasLista.Count == 0)//Si no hay botellas levantadas, agrega esta a la lista de levantadas
+        if (MemotestManager.Instance.BotellasLista.Count == 0 && MemotestManager.Instance.cronometro2 < 0)//Si no hay botellas levantadas, agrega esta a la lista de levantadas
         {
+            MemotestManager.Instance.cronometro2 = 3.0f;
             animcam.SetBool("Vuelve", false);
             animcam.SetInteger("Botella", Identidad.Num);
             anim.SetBool("Rotar", true);//La rota
@@ -31,8 +32,9 @@ public class Rotar : MonoBehaviour
 
 
         }
-        if (MemotestManager.Instance.BotellasLista.Count == 1 && MemotestManager.Instance.BotellasLista[0].name != gameObject.name) //Si hay una levantada, y es diferente a esta, agrega a esta tambien
+        if (MemotestManager.Instance.BotellasLista.Count == 1 && MemotestManager.Instance.BotellasLista[0].name != gameObject.name && MemotestManager.Instance.cronometro2 < 0) //Si hay una levantada, y es diferente a esta, agrega a esta tambien
         {
+            MemotestManager.Instance.cronometro2 = 3.0f;
             animcam.SetBool("Vuelve", false);
             animcam.SetInteger("Botella", Identidad.Num);
             MemotestManager.Instance.cronometro = 1.5f;
