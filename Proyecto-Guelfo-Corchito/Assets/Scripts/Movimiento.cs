@@ -5,6 +5,8 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour {
 	public bool rotando = true;
 	public Vector3 rotacion;
+    bool CambiarTurno = true;
+    bool TocoTrigger = false;
 
 	void Start () 
 	{
@@ -21,19 +23,23 @@ public class Movimiento : MonoBehaviour {
 
        
 	}
-	void OnCollisionEnter(Collision col)
-	{
-		if (col.gameObject.name == "CopaGuelfo")
-		{
-			rotando = false;
-		}
-		if (col.gameObject.name == "BarrilPrincipal")
-		{
-			rotando = false;
-		}
+
+    void OnTriggerEnter(Collider col)
+    {
+        TocoTrigger = true;
+    }
 
 
-	}
+    void OnCollisionEnter(Collision col)
+    {
+        rotando = false;
+
+        if (CambiarTurno && !TocoTrigger) 
+        {
+            LevelManagerCorchito.Instance.turno = !LevelManagerCorchito.Instance.turno;
+            CambiarTurno = false;
+        }
+    }
 	void destruir ()
 	{
 		Destroy (gameObject);

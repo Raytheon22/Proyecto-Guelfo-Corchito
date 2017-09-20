@@ -1185,7 +1185,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ce6f05d1b3b561548b36fc30313670d5, type: 2}
     - target: {fileID: 100004, guid: 36f985d571ee87b409bf0974acef3c1f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 36f985d571ee87b409bf0974acef3c1f, type: 3}
       propertyPath: m_IsActive
@@ -2954,12 +2954,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3927b2cb6b18ed448b2b4ed7e894a9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Turno: 1
   BotellasLista: []
-  BotellasAcertadas: []
+  BotellasAcertadasJ1: []
+  BotellasAcertadasJ2: []
   anim1: {fileID: 0}
   anim2: {fileID: 0}
   vuelverot: {fileID: 0}
   cronometro: 0
+  cronometro2: 0
 --- !u!4 &1036220516
 Transform:
   m_ObjectHideFlags: 0
@@ -5356,7 +5359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1950752283
 MeshRenderer:
   m_ObjectHideFlags: 0

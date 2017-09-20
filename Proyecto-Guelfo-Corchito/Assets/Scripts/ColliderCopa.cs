@@ -14,7 +14,7 @@ public class ColliderCopa : MonoBehaviour {
 	void Update ()
 	{
 		if (Cronometro > -0.5)
-        {
+        { 
             Cronometro -= Time.deltaTime;
         }
 	}
@@ -27,11 +27,15 @@ public class ColliderCopa : MonoBehaviour {
 		if (!LevelManagerCorchito.Instance.turno && Sumar) 
 		{
 			LevelManagerCorchito.Instance.puntaje1 += 1;
+            LevelManagerCorchito.Instance.turno = false;
+
             Sumar = false;
 		}
 		if (LevelManagerCorchito.Instance.turno && Sumar) 
 		{
             LevelManagerCorchito.Instance.puntaje2 += 1;
+            LevelManagerCorchito.Instance.turno = true;
+
             Sumar = false;
         }
     }
