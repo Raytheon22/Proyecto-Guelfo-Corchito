@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23458783844315036}
   - component: {fileID: 54863638351383284}
   - component: {fileID: 114944224607821546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Corcho
   m_TagString: Untagged
   m_Icon: {fileID: 0}

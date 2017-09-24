@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Movimiento.cs" />
      <Compile Include="Assets\Scripts\NombreText.cs" />
      <Compile Include="Assets\Scripts\Rotar.cs" />
+     <Compile Include="Assets\Scripts\Tap.cs" />
      <Compile Include="Assets\Scripts\Ubicador.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
