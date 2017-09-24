@@ -25,6 +25,15 @@ public class LevelManagerCorchito : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+        if (puntaje1 == 3)
+        {
+            Debug.Log("Gano el jugador 1");
+        }
+        else if (puntaje2 == 3)
+        {
+            Debug.Log("Gano el jugador 2 ");
+        }
+
 		texto1.text = nombre1 + puntaje1;
 		texto2.text = nombre2 + puntaje2;
 		if (turno == false) 

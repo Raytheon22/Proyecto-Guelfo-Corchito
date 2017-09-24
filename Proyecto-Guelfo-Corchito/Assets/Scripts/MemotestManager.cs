@@ -39,9 +39,20 @@ public class MemotestManager : MonoBehaviour {
 			BotellasLista.Clear();
             Turno = !Turno;
 		}
-
 	}
+
     void Update() {
+
+        foreach (GameObject g in BotellasAcertadasJ1)
+        {
+            g.GetComponent<Collider>().enabled = false;
+        }
+
+        foreach (GameObject g in BotellasAcertadasJ2)
+        {
+            g.GetComponent<Collider>().enabled = false;
+        }
+
 
         if (BotellasAcertadasJ1.Count == 12)
         {
@@ -63,8 +74,7 @@ public class MemotestManager : MonoBehaviour {
         }
 	
         if (BotellasLista.Count == 2) //Cuando estan 2 levantadas accede al codigo que tiene como propiedad un numero y a ese numero le da un valor
-        {
-			
+        {			
             n1 = BotellasLista[0].GetComponent<NombreText>();
             n2 = BotellasLista[1].GetComponent<NombreText>();
             anim1 = BotellasLista[0].GetComponent<Animator>();
@@ -90,10 +100,8 @@ public class MemotestManager : MonoBehaviour {
 			else 
 			{
 				nosoniguales ();
-			}
-				
+			}				
 		}
-
     }
 }
 	
